@@ -18,7 +18,7 @@ def save_user(user):
 
 def verify_user(first_name,password):
 	'''
-	Function that verifies the existance of the user before creating credentials
+	Function that verifies the existence of the user before creating credentials
 	'''
 	checking_user = Credential.check_user(first_name,password)
 	return checking_user
@@ -60,24 +60,24 @@ def main():
 	print('Hello! Welcome to Password Locker.')
 	while True:
 		print(' ')
-		print("-"*60)
+		print("-"*20)
 		print('Use these codes to navigate: \n cr-Create an Account \n lg-Log In \n ex-Exit')
 		short_code = input('Enter a choice: ').lower().strip()
 		if short_code == 'ex':
 			break
 
 		elif short_code == 'cr':
-			print("-"*60)
+			print("-"*20)
 			print(' ')
 			print('To create a new account:')
-			first_name = input('Enter your first name - ').strip()
+            first_name = input('Enter your first name - ').strip()
 			last_name = input('Enter your last name - ').strip()
 			password = input('Enter your password - ').strip()
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
 			print(f'New Account Created for: {first_name} {last_name} using password: {password}')
 		elif short_code == 'lg':
-			print("-"*60)
+			print("-"*20)
 			print(' ')
 			print('To login, enter your account details:')
 			user_name = input('Enter your first name - ').strip()
@@ -88,10 +88,10 @@ def main():
 				print(f'Welcome {user_name}. Please choose an option to continue.')
 				print(' ')
 				while True:
-					print("-"*60)
+					print("-"*20)
 					print('Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit')
 					short_code = input('Enter a choice: ').lower().strip()
-					print("-"*60)
+					print("-"*20)
 					if short_code == 'ex':
 						print(" ")
 						print(f'Goodbye {user_name}')
@@ -103,10 +103,10 @@ def main():
 						account_name = input('Enter your account\'s name - ').strip()
 						while True:
 							print(' ')
-							print("-"*60)
+							print("-"*20)
 							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
 							psw_choice = input('Enter an option: ').lower().strip()
-							print("-"*60)
+							print("-"*20)
 							if psw_choice == 'ep':
 								print(" ")
 								password = input('Enter your password: ').strip()
@@ -147,7 +147,7 @@ def main():
 				print('Oops! Wrong details entered. Try again or Create an Account.')
 
 		else:
-			print("-"*60)
+			print("-"*20)
 			print(' ')
 			print('Oops! Wrong option entered. Try again.')
 
@@ -160,4 +160,4 @@ def main():
 if __name__ == '__main__':
 	main()
 
-# ! / Think we are done
+# ! / Done for now! X0Xo
