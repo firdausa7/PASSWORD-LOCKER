@@ -4,7 +4,7 @@
 [FIRDAUSA SALAT](http://github.com/firdausa7)
 
 ## Description
-Password Locker is a terminal run python application that allows users to store details i.e. usernames and passwords of their various accounts.
+Password Locker is a terminal run python application that allows users to store their credentials, usernames and passwords of their accounts.
 
 ## Screenshot
 ![](images/pww.png)
