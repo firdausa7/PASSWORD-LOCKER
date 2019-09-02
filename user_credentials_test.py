@@ -63,7 +63,7 @@ class TestCredentials(unittest.TestCase):
 		Function to create an account's credentials before each test
 		'''
 		self.new_credential=Credential(
-		    'Jannat', 'Facebook', 'firdausasalat', 'adil2017')
+		    'Jannat', 'Facebook', 'Jannat', 'adil2017')
 
 	def test__init__(self):
 		'''
@@ -98,10 +98,10 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the display_credentials method, displays the correct credentials.
 		'''
 		self.new_credential.save_credentials()
-		twitter=Credential('Firdausa7', 'Twitter', 'firdausasalat', 'adil2017')
+		twitter=Credential('Jannat', 'Twitter', 'Jannat', 'adil2017')
 		twitter.save_credentials()
-		gmail=Credential('Firdausa7', 'Gmail', 'firdausasalat', 'adil2017')
-		gmail.save_credentials()
+		# gmail=Credential('Firdausa', 'Gmail', 'Firdausa', 'adil2017')
+		# gmail.save_credentials()
 		self.assertEqual(len(Credential.display_credentials(twitter.user_name)), 2)
 
 	def test_find_by_site_name(self):
@@ -109,7 +109,7 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the find_by_site_name method returns the correct credential
 		'''
 		self.new_credential.save_credentials()
-		twitter=Credential('Firdausa7', 'Twitter', 'firdausasalat', 'adil2017')
+		twitter=Credential('Jannat', 'Twitter', 'Jannat', 'adil2017')
 		twitter.save_credentials()
 		credential_exists=Credential.find_by_site_name('Twitter')
 		self.assertEqual(credential_exists, twitter)
@@ -119,7 +119,7 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the copy a credential method copies the correct credential
 		'''
 		self.new_credential.save_credentials()
-		twitter=Credential('Firdausa7', 'Twitter', 'firdausasalat', 'adil2017')
+		twitter=Credential('Jannat', 'Twitter', 'Jannat', 'adil2017')
 		twitter.save_credentials()
 		find_credential=None
 		for credential in Credential.user_credentials_list:
