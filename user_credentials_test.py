@@ -42,6 +42,7 @@ class TestCredentials(unittest.TestCase):
 	'''
 
 	def test_check_user(self):
+		
 		'''
 		Function to test whether the login in function check_user works as expected
 		'''
@@ -54,12 +55,12 @@ class TestCredentials(unittest.TestCase):
 			if user.first_name == user2.first_name and user.password == user2.password:
 				current_user = user.first_name
 		return current_user
-        self.assertEqual(current_user, Credential.check_user(
+		self.assertEqual(current_user, Credential.check_user(
 	         user2.password, user2.first_name))
 
 
 
-    def setUp(self):
+	def setUp(self):
 		'''
 		Function to create an account's credentials before each test
 		'''
@@ -130,4 +131,5 @@ class TestCredentials(unittest.TestCase):
 		self.assertEqual('adil2017', pyperclip.paste())
 		print(pyperclip.paste())
 
-if __name__ == '__main__'
+if __name__ == '__main__':
+	unittest.main()
