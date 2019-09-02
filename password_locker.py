@@ -70,7 +70,7 @@ def main():
 			print("-"*20)
 			print(' ')
 			print('To create a new account:')
-            first_name = input('Enter your first name - ').strip()
+			first_name = input('Enter your first name - ').strip()
 			last_name = input('Enter your last name - ').strip()
 			password = input('Enter your password - ').strip()
 			save_user(create_user(first_name,last_name,password))
