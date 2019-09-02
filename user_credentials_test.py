@@ -5,7 +5,7 @@ import pyperclip
 
 class TestUser(unittest.TestCase):
 	'''
-	Test class that defines test cases for the user class behaviours.
+	Test class that defines test cases for the user class behaviour.
 
 	Args:
 	    unittest.TestCase: helps in creating test cases
@@ -54,9 +54,7 @@ class TestCredentials(unittest.TestCase):
 			if user.first_name == user2.first_name and user.password == user2.password:
 				current_user = user.first_name
 		return current_user
-        self.assertEqual(current_user, Credential.check_user(
-		user2.password, user2.first_name))
-
+     self.assertEqual(current_user, Credential.check_user(user2.password, user2.first_name))
 
 
     def setUp(self):
