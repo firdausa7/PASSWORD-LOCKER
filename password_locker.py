@@ -34,7 +34,7 @@ def main():
     print(" ")
     print(" ")
     while True:
-        print("-" * 156)
+        print("-" * 30)
         print("""USE THE FOLLOWING SHORT CODES!!
 1. cr - CREATE NEW ACCOUNT
 2. dc - DISPLAY ACCOUNTS
@@ -71,7 +71,7 @@ def main():
             print('\n')
             save_credentials(create_credentials (twitter_t,email_e))
             print('\n')
-            print("-" * 156)
+            print("-" * 30)
             print(f"New Account  { first_name } { last_name } { twitter_t } has been created")
             print('\n')
         elif short_code =='dc':
@@ -95,7 +95,7 @@ def main():
         elif  short_code == 'gp':
             print(" ")
             print(" ")
-            print("TO GENERATE A PASSWORD ADD IN YOUR FIRST NAME AND FACEBOOK BELOW!!")
+            print("TO GENERATE A PASSWORD ADD IN YOUR FIRST NAME AND TWITTER BELOW!!")
             print(" ")
             list_of_inputs = [c for c in input()]
 
@@ -112,14 +112,14 @@ def main():
 
 
         elif short_code == "ex":
-            print("-" * 156)
+            print("-" * 30)
             print(" ")
-            print("                        THANK YOU!")
+            print("                        THANK YOU!...bye bye")
             print(" ")
-            print("-" * 156)
+            print("-" * 30)
             break
         else:
-            print("-" * 156)
+            print("-" * 30)
             print(" ")
             print("                              RETRY!!")
             print(" ")
