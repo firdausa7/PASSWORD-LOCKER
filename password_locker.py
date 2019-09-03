@@ -37,9 +37,9 @@ def main():
         print("-" * 156)
         print("""USE THE FOLLOWING SHORT CODES!!
 1. cr - CREATE NEW ACCOUNT
-2. ex - EXIT PASSWORD LOCKER
-3. dc - DISPLAY ACCOUNTS
-4. gp - GENERATE PASSWORDS""")
+2. dc - DISPLAY ACCOUNTS
+3. gp - GENERATE PASSWORDS
+4. ex - EXIT PASSWORD LOCKER""")
 
 
         print(" ")
