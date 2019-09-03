@@ -7,7 +7,7 @@
 Password Locker is a terminal run python application that allows users to store their credentials, usernames and passwords of their accounts.
 
 ## Screenshot
-![](images/pww.png)
+![](images/passlock.png)
 ![](images/pwd.png)
 
 ## Specifications
