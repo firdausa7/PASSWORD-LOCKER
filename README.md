@@ -8,7 +8,6 @@ Password Locker is a terminal run python application that allows users to store 
 
 ## Screenshot
 ![](images/passlock.png)
-![](images/pwd.png)
 
 ## Specifications
 | Behavior | Input | Output |
